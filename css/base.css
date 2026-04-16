@@ -1,0 +1,41 @@
+/* ============================================
+   BASE — Reset, Variables, Typography
+   ============================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:      #020409;
+  --bg1:     #060c14;
+  --bg2:     #0a1220;
+  --cyan:    #00e5ff;
+  --coral:   #ff3366;
+  --purple:  #a855f7;
+  --green:   #00ff88;
+  --text:    #c8d8e8;
+  --muted:   #4a6080;
+  --glass:   rgba(0, 229, 255, 0.04);
+  --gborder: rgba(0, 229, 255, 0.12);
+  --glow:    0 0 20px rgba(0, 229, 255, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:    var(--bg);
+  color:         var(--text);
+  font-family:   'Oxanium', sans-serif;
+  overflow-x:    hidden;
+  cursor:        none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--cyan); }
